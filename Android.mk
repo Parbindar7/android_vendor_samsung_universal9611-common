@@ -4,6 +4,6 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifneq ($(filter a51,$(TARGET_DEVICE)),)
+ifeq ($(TARGET_DEVICE),universal9611-common)
 
 endif

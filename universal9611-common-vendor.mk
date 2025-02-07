@@ -6,13 +6,6 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/samsung/universal9611-common
 
 PRODUCT_COPY_FILES += \
-    vendor/samsung/universal9611-common/proprietary/vendor/bin/cbd:$(TARGET_COPY_OUT_VENDOR)/bin/cbd \
-    vendor/samsung/universal9611-common/proprietary/vendor/bin/hw/android.hardware.drm@1.4-service.widevine:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.drm@1.4-service.widevine \
-    vendor/samsung/universal9611-common/proprietary/vendor/bin/hw/gpsd:$(TARGET_COPY_OUT_VENDOR)/bin/hw/gpsd \
-    vendor/samsung/universal9611-common/proprietary/vendor/bin/hw/rild:$(TARGET_COPY_OUT_VENDOR)/bin/hw/rild \
-    vendor/samsung/universal9611-common/proprietary/vendor/bin/hw/vendor.samsung.hardware.gnss@2.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.samsung.hardware.gnss@2.0-service \
-    vendor/samsung/universal9611-common/proprietary/vendor/bin/tzdaemon:$(TARGET_COPY_OUT_VENDOR)/bin/tzdaemon \
-    vendor/samsung/universal9611-common/proprietary/vendor/bin/tzts_daemon:$(TARGET_COPY_OUT_VENDOR)/bin/tzts_daemon \
     vendor/samsung/universal9611-common/proprietary/vendor/etc/gnss/ca.pem:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/ca.pem \
     vendor/samsung/universal9611-common/proprietary/vendor/etc/gnss/gps.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/gps.cfg \
     vendor/samsung/universal9611-common/proprietary/vendor/etc/gnss/gps.debug.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/gps.debug.cfg \
@@ -67,46 +60,46 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/universal9611-common/proprietary/vendor/firmware/kernel_bin_nfd.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/kernel_bin_nfd.bin \
     vendor/samsung/universal9611-common/proprietary/vendor/firmware/nfc/sec_s3nrn82_firmware.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/nfc/sec_s3nrn82_firmware.bin \
     vendor/samsung/universal9611-common/proprietary/vendor/firmware/rtdsp.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/rtdsp.bin \
-    vendor/samsung/universal9611-common/proprietary/vendor/firmware/spkamp.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/spkamp.bin \
-    vendor/samsung/universal9611-common/proprietary/vendor/lib/egl/libGLES_mali.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/libGLES_mali.so \
-    vendor/samsung/universal9611-common/proprietary/vendor/lib/hw/gatekeeper.exynos9611.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/gatekeeper.exynos9611.so \
-    vendor/samsung/universal9611-common/proprietary/vendor/lib/libprofileparamstorage.so:$(TARGET_COPY_OUT_VENDOR)/lib/libprofileparamstorage.so \
-    vendor/samsung/universal9611-common/proprietary/vendor/lib/libsecaudiocoreutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsecaudiocoreutils.so \
-    vendor/samsung/universal9611-common/proprietary/vendor/lib/libsecril-client.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsecril-client.so \
-    vendor/samsung/universal9611-common/proprietary/vendor/lib/libspatializerparamstorage.so:$(TARGET_COPY_OUT_VENDOR)/lib/libspatializerparamstorage.so \
-    vendor/samsung/universal9611-common/proprietary/vendor/lib/libteecl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libteecl.so \
-    vendor/samsung/universal9611-common/proprietary/vendor/lib/libuuid.so:$(TARGET_COPY_OUT_VENDOR)/lib/libuuid.so \
-    vendor/samsung/universal9611-common/proprietary/vendor/lib/libwrappergps.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwrappergps.so \
-    vendor/samsung/universal9611-common/proprietary/vendor/lib/libwvhidl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwvhidl.so \
-    vendor/samsung/universal9611-common/proprietary/vendor/lib64/egl/libGLES_mali.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/libGLES_mali.so \
-    vendor/samsung/universal9611-common/proprietary/vendor/lib64/hw/android.hardware.gnss@2.1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.gnss@2.1-impl.so \
-    vendor/samsung/universal9611-common/proprietary/vendor/lib64/hw/gatekeeper.exynos9611.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/gatekeeper.exynos9611.so \
-    vendor/samsung/universal9611-common/proprietary/vendor/lib64/hw/vendor.samsung.hardware.gnss@2.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.samsung.hardware.gnss@2.0-impl.so \
-    vendor/samsung/universal9611-common/proprietary/vendor/lib64/libengmode_client.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libengmode_client.so \
-    vendor/samsung/universal9611-common/proprietary/vendor/lib64/libfloatingfeature.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfloatingfeature.so \
-    vendor/samsung/universal9611-common/proprietary/vendor/lib64/libiwt.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libiwt.so \
-    vendor/samsung/universal9611-common/proprietary/vendor/lib64/libkeymaster_helper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libkeymaster_helper.so \
-    vendor/samsung/universal9611-common/proprietary/vendor/lib64/libreference-ril.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libreference-ril.so \
-    vendor/samsung/universal9611-common/proprietary/vendor/lib64/libril.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libril.so \
-    vendor/samsung/universal9611-common/proprietary/vendor/lib64/librilutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/librilutils.so \
-    vendor/samsung/universal9611-common/proprietary/vendor/lib64/libsec-ril-dsds.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsec-ril-dsds.so \
-    vendor/samsung/universal9611-common/proprietary/vendor/lib64/libsec-ril.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsec-ril.so \
-    vendor/samsung/universal9611-common/proprietary/vendor/lib64/libsecnativefeature.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsecnativefeature.so \
-    vendor/samsung/universal9611-common/proprietary/vendor/lib64/libsecril-client.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsecril-client.so \
-    vendor/samsung/universal9611-common/proprietary/vendor/lib64/libsemnativecarrierfeature.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsemnativecarrierfeature.so \
-    vendor/samsung/universal9611-common/proprietary/vendor/lib64/libteecl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libteecl.so \
-    vendor/samsung/universal9611-common/proprietary/vendor/lib64/libuuid.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libuuid.so \
-    vendor/samsung/universal9611-common/proprietary/vendor/lib64/libvkmanager_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvkmanager_vendor.so \
-    vendor/samsung/universal9611-common/proprietary/vendor/lib64/libwrappergps.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwrappergps.so \
-    vendor/samsung/universal9611-common/proprietary/vendor/lib64/vendor.samsung.hardware.gnss@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.gnss@2.0.so \
-    vendor/samsung/universal9611-common/proprietary/vendor/lib64/vendor.samsung.hardware.radio.bridge@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.radio.bridge@2.0.so \
-    vendor/samsung/universal9611-common/proprietary/vendor/lib64/vendor.samsung.hardware.radio.channel@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.radio.channel@2.0.so \
-    vendor/samsung/universal9611-common/proprietary/vendor/lib64/vendor.samsung.hardware.radio@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.radio@2.0.so \
-    vendor/samsung/universal9611-common/proprietary/vendor/lib64/vendor.samsung.hardware.radio@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.radio@2.1.so
+    vendor/samsung/universal9611-common/proprietary/vendor/firmware/spkamp.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/spkamp.bin
 
 PRODUCT_PACKAGES += \
+    libGLES_mali \
+    gatekeeper.exynos9611 \
+    libsecril-client_vendor \
+    libteecl \
+    libuuid \
+    libwrappergps \
+    libprofileparamstorage \
+    libsecaudiocoreutils \
+    libspatializerparamstorage \
+    libwvhidl \
+    android.hardware.gnss@2.1-impl \
+    vendor.samsung.hardware.gnss@2.0-impl \
+    libengmode_client \
+    libfloatingfeature \
+    libiwt \
+    libkeymaster_helper \
+    libreference-ril_vendor \
+    libril_vendor \
+    librilutils_vendor \
+    libsec-ril-dsds \
+    libsec-ril \
+    libsemnativecarrierfeature \
     libskeymaster4device \
-    manifest_android.hardware.drm@1.4-service.widevine
+    libvkmanager_vendor \
+    vendor.samsung.hardware.gnss@2.0 \
+    vendor.samsung.hardware.radio.bridge@2.0 \
+    vendor.samsung.hardware.radio.channel@2.0 \
+    vendor.samsung.hardware.radio@2.0_vendor \
+    vendor.samsung.hardware.radio@2.1_vendor \
+    manifest_android.hardware.drm@1.4-service.widevine.xml \
+    cbd \
+    android.hardware.drm@1.4-service.widevine \
+    gpsd \
+    rild \
+    vendor.samsung.hardware.gnss@2.0-service \
+    tzdaemon \
+    tzts_daemon
 
 PRODUCT_PACKAGES += \
     libGLES_mali_libOpenCL_symlink32 \
