@@ -10,13 +10,14 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/universal9611-common/proprietary/vendor/etc/gnss/gps.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/gps.cfg \
     vendor/samsung/universal9611-common/proprietary/vendor/etc/gnss/gps.debug.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/gps.debug.cfg \
     vendor/samsung/universal9611-common/proprietary/vendor/etc/init/android.hardware.drm@1.4-service.widevine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.4-service.widevine.rc \
+    vendor/samsung/universal9611-common/proprietary/vendor/etc/init/cass.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/cass.rc \
     vendor/samsung/universal9611-common/proprietary/vendor/etc/init/init.baseband.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.baseband.rc \
     vendor/samsung/universal9611-common/proprietary/vendor/etc/init/init.nfc.samsung.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.nfc.samsung.rc \
-    vendor/samsung/universal9611-common/proprietary/vendor/etc/init/init.vendor.onebinary.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.vendor.onebinary.rc \
-    vendor/samsung/universal9611-common/proprietary/vendor/etc/init/init.vendor.rilchip.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.vendor.rilchip.rc \
     vendor/samsung/universal9611-common/proprietary/vendor/etc/init/init.vendor.rilcommon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.vendor.rilcommon.rc \
     vendor/samsung/universal9611-common/proprietary/vendor/etc/init/teegris.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/teegris.rc \
+    vendor/samsung/universal9611-common/proprietary/vendor/etc/init/vaultkeeper_common.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vaultkeeper_common.rc \
     vendor/samsung/universal9611-common/proprietary/vendor/etc/init/vendor.samsung.hardware.gnss@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.hardware.gnss@2.0-service.rc \
+    vendor/samsung/universal9611-common/proprietary/vendor/etc/init/vendor.samsung.rilchip.slsi.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.rilchip.slsi.rc \
     vendor/samsung/universal9611-common/proprietary/vendor/etc/init/wifi.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/wifi.rc \
     vendor/samsung/universal9611-common/proprietary/vendor/etc/media_codecs_performance.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance.xml \
     vendor/samsung/universal9611-common/proprietary/vendor/etc/media_profiles_V1_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_V1_0.xml \
@@ -62,10 +63,12 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/universal9611-common/proprietary/vendor/firmware/spkamp.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/spkamp.bin \
     vendor/samsung/universal9611-common/proprietary/vendor/tee/00000000-0000-0000-0000-564c544b5052:$(TARGET_COPY_OUT_VENDOR)/tee/00000000-0000-0000-0000-564c544b5052
 
+
 PRODUCT_PACKAGES += \
     libGLES_mali \
     gatekeeper.exynos9611 \
-    libsecril-client_vendor \
+    libsecril-client.exynos9611 \
+    libsemnativecarrierfeature \
     libteecl \
     libuuid \
     libwrappergps \
@@ -75,31 +78,39 @@ PRODUCT_PACKAGES += \
     libwvhidl \
     android.hardware.gnss@2.1-impl \
     vendor.samsung.hardware.gnss@2.0-impl \
+    libSemDataProps \
+    libSemTelephonyProps \
     libengmode_client \
     libfloatingfeature \
     libiwt \
     libkeymaster_helper \
-    libreference-ril_vendor \
-    libril_vendor \
-    librilutils_vendor \
-    libsec-ril-dsds \
+    libprotobuf-cpp-full-21.7 \
+    libril_sem \
     libsec-ril \
-    libsemnativecarrierfeature \
     libskeymaster4device \
+    libstork_shared \
     libvkmanager_vendor \
+    libvkservice \
     vendor.samsung.hardware.gnss@2.0 \
-    vendor.samsung.hardware.radio.bridge@2.0 \
-    vendor.samsung.hardware.radio.channel@2.0 \
-    vendor.samsung.hardware.radio@2.0_vendor \
-    vendor.samsung.hardware.radio@2.1_vendor \
+    vendor.samsung.hardware.radio-V1-ndk \
+    vendor.samsung.hardware.radio.bridge-V1-ndk \
+    vendor.samsung.hardware.radio.channel-V1-ndk \
+    vendor.samsung.hardware.radio.data-V1-ndk \
+    vendor.samsung.hardware.radio.messaging-V1-ndk \
+    vendor.samsung.hardware.radio.sim-V1-ndk \
     manifest_android.hardware.drm@1.4-service.widevine.xml \
+    vendor.samsung.hardware.radio.exclude.slsi.xml \
+    vendor.samsung.hardware.radio_manifest_2_33.xml \
+    vendor.samsung.hardware.sehradio_manifest_2_33.xml \
     cbd \
+    cass \
     android.hardware.drm@1.4-service.widevine \
     gpsd \
     rild \
     vendor.samsung.hardware.gnss@2.0-service \
     tzdaemon \
-    tzts_daemon
+    tzts_daemon \
+    vaultkeeperd
 
 PRODUCT_PACKAGES += \
     libGLES_mali_libOpenCL_symlink32 \
