@@ -59,7 +59,8 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/universal9611-common/proprietary/vendor/firmware/kernel_bin_nfd.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/kernel_bin_nfd.bin \
     vendor/samsung/universal9611-common/proprietary/vendor/firmware/nfc/sec_s3nrn82_firmware.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/nfc/sec_s3nrn82_firmware.bin \
     vendor/samsung/universal9611-common/proprietary/vendor/firmware/rtdsp.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/rtdsp.bin \
-    vendor/samsung/universal9611-common/proprietary/vendor/firmware/spkamp.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/spkamp.bin
+    vendor/samsung/universal9611-common/proprietary/vendor/firmware/spkamp.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/spkamp.bin \
+    vendor/samsung/universal9611-common/proprietary/vendor/tee/00000000-0000-0000-0000-564c544b5052:$(TARGET_COPY_OUT_VENDOR)/tee/00000000-0000-0000-0000-564c544b5052
 
 PRODUCT_PACKAGES += \
     libGLES_mali \
