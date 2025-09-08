@@ -17,6 +17,27 @@ cc_prebuilt_library_shared {
         none: true,
     },
     target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/egl/libGLES_mali.so",
+            ],
+            shared_libs: [
+                "libnativewindow",
+                "libutils",
+                "libgralloctypes",
+                "liblog",
+                "libion_exynos",
+                "libbase",
+                "libz",
+                "libcutils",
+                "libhidlbase",
+                "libhardware",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
         android_arm64: {
             srcs: [
                 "proprietary/vendor/lib64/egl/libGLES_mali.so",
