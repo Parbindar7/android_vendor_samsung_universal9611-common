@@ -65,33 +65,48 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     libGLES_mali \
-    gatekeeper.exynos9611 \
+    libfloatingfeature \
     libsecril-client \
-    libsemnativecarrierfeature \
-    libteecl \
-    libuuid_vendor \
-    libwrappergps \
+    audio.primary.exynos9611 \
+    libSamsungPostProcessConvertor \
+    lib_SamsungRec_07010 \
+    lib_SoundAlive_SRC384_ver320 \
+    lib_soundaliveresampler \
+    libalsautils_sec \
+    libaudio-ril \
+    libaudio_soundtrigger \
+    libaudioproxy \
+    libaudioroute_vendor \
     libprofileparamstorage \
+    librecordalive \
+    libsamsungDiamondVoice \
     libsecaudiocoreutils \
+    libsecaudioinfo \
+    libsecnativefeature \
     libspatializerparamstorage \
     libwvhidl \
+    libaudioeffectoffload \
     android.hardware.gnss@2.1-impl \
+    gatekeeper.exynos9611 \
     vendor.samsung.hardware.gnss@2.0-impl \
     libSemDataProps \
     libSemTelephonyProps \
     libcrypto-tm \
     libengmode_client \
-    libfloatingfeature \
     libiwt \
     libkeymaster_helper \
     libprotobuf-cpp-full-21.7 \
     libril_sem \
     libsec-ril \
+    libsemnativecarrierfeature \
     libskeymaster4device \
     libssl-tm \
     libstork_shared \
+    libteecl \
+    libuuid_vendor \
     libvkmanager_vendor \
     libvkservice \
+    libwrappergps \
     vendor.samsung.hardware.gnss@2.0 \
     vendor.samsung.hardware.radio-V1-ndk \
     vendor.samsung.hardware.radio.bridge-V1-ndk \
