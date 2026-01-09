@@ -409,7 +409,6 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "libaudioroute_vendor",
-    stem: "libaudioroute",
     owner: "samsung",
     strip: {
         none: true,
@@ -417,7 +416,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm: {
             srcs: [
-                "proprietary/vendor/lib/libaudioroute.so",
+                "proprietary/vendor/lib/libaudioroute_vendor.so",
             ],
             shared_libs: [
                 "liblog",
@@ -1117,7 +1116,6 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libskeymaster4device.so",
             ],
             shared_libs: [
-                "libssl-tm",
                 "libshim_crypto",
                 "libkeymaster_messages",
                 "libcrypto-tm",
