@@ -63,6 +63,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libGLES_mali \
     libfloatingfeature \
+    libsecnativefeature \
     libsecril-client \
     audio.primary.exynos9611 \
     libSamsungPostProcessConvertor \
@@ -79,7 +80,6 @@ PRODUCT_PACKAGES += \
     libsamsungDiamondVoice \
     libsecaudiocoreutils \
     libsecaudioinfo \
-    libsecnativefeature \
     libspatializerparamstorage \
     libwvhidl \
     libaudioeffectoffload \
@@ -92,7 +92,6 @@ PRODUCT_PACKAGES += \
     libengmode_client \
     libiwt \
     libkeymaster_helper \
-    libprotobuf-cpp-full-21.7 \
     libril_sem \
     libsec-ril \
     libsemnativecarrierfeature \
