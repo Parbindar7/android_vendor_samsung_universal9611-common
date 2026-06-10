@@ -18,7 +18,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/universal9611-common/proprietary/vendor/etc/init/vendor.samsung.hardware.gnss@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.hardware.gnss@2.0-service.rc \
     vendor/samsung/universal9611-common/proprietary/vendor/etc/init/vendor.samsung.rilchip.slsi.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.rilchip.slsi.rc \
     vendor/samsung/universal9611-common/proprietary/vendor/etc/init/wifi.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/wifi.rc \
-    vendor/samsung/universal9611-common/proprietary/vendor/etc/media_profiles_V1_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_V1_0.xml \
     vendor/samsung/universal9611-common/proprietary/vendor/etc/mixer_usb_gray.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_usb_gray.xml \
     vendor/samsung/universal9611-common/proprietary/vendor/etc/mixer_usb_white.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_usb_white.xml \
     vendor/samsung/universal9611-common/proprietary/vendor/etc/plmn_delta.bin:$(TARGET_COPY_OUT_VENDOR)/etc/plmn_delta.bin \
