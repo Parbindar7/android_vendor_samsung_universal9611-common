@@ -15,7 +15,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/universal9611-common/proprietary/vendor/etc/init/init.vendor.rilcommon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.vendor.rilcommon.rc \
     vendor/samsung/universal9611-common/proprietary/vendor/etc/init/teegris.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/teegris.rc \
     vendor/samsung/universal9611-common/proprietary/vendor/etc/init/vaultkeeper_common.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vaultkeeper_common.rc \
-    vendor/samsung/universal9611-common/proprietary/vendor/etc/init/vendor.samsung.hardware.gnss@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.hardware.gnss@2.0-service.rc \
     vendor/samsung/universal9611-common/proprietary/vendor/etc/init/vendor.samsung.rilchip.slsi.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.rilchip.slsi.rc \
     vendor/samsung/universal9611-common/proprietary/vendor/etc/init/wifi.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/wifi.rc \
     vendor/samsung/universal9611-common/proprietary/vendor/etc/mixer_usb_gray.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_usb_gray.xml \
@@ -81,7 +80,6 @@ PRODUCT_PACKAGES += \
     libspatializerparamstorage \
     libaudioeffectoffload \
     android.hardware.gnss@2.1-impl \
-    vendor.samsung.hardware.gnss@2.0-impl \
     libSemDataProps \
     libSemTelephonyProps \
     libcrypto-tm \
@@ -101,7 +99,6 @@ PRODUCT_PACKAGES += \
     libvkservice \
     libwrappergps \
     libwvaidl \
-    vendor.samsung.hardware.gnss@2.0 \
     vendor.samsung.hardware.radio-V1-ndk \
     vendor.samsung.hardware.radio.bridge-V1-ndk \
     vendor.samsung.hardware.radio.channel-V1-ndk \
@@ -116,7 +113,6 @@ PRODUCT_PACKAGES += \
     android.hardware.drm-service.widevine \
     gpsd \
     rild \
-    vendor.samsung.hardware.gnss@2.0-service \
     tzdaemon \
     tzts_daemon \
     vaultkeeperd
