@@ -81,7 +81,6 @@ PRODUCT_PACKAGES += \
     libspatializerparamstorage \
     libaudioeffectoffload \
     android.hardware.gnss@2.1-impl \
-    gatekeeper.exynos9611 \
     vendor.samsung.hardware.gnss@2.0-impl \
     libSemDataProps \
     libSemTelephonyProps \
