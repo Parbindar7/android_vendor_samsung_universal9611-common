@@ -62,8 +62,12 @@ PRODUCT_PACKAGES += \
     libGLES_mali \
     lib_SoundBooster_ver1000 \
     libfloatingfeature \
+    libprofileparamstorage \
+    libsecaudiocoreutils \
     libsecnativefeature \
     libsecril-client \
+    libspatializerparamstorage \
+    libswspatializer \
     audio.primary.exynos9611 \
     libSamsungPostProcessConvertor \
     lib_SamsungRec_07010 \
@@ -74,12 +78,9 @@ PRODUCT_PACKAGES += \
     libaudio_soundtrigger \
     libaudioproxy \
     libaudioroute_vendor \
-    libprofileparamstorage \
     librecordalive \
     libsamsungDiamondVoice \
-    libsecaudiocoreutils \
     libsecaudioinfo \
-    libspatializerparamstorage \
     libaudioeffectoffload \
     android.hardware.gnss@2.1-impl \
     libSemDataProps \
