@@ -13,6 +13,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/universal9611-common/proprietary/vendor/etc/init/android.hardware.drm-service.widevine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm-service.widevine.rc \
     vendor/samsung/universal9611-common/proprietary/vendor/etc/init/cass.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/cass.rc \
     vendor/samsung/universal9611-common/proprietary/vendor/etc/init/init.baseband.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.baseband.rc \
+    vendor/samsung/universal9611-common/proprietary/vendor/etc/init/init.nfc.samsung.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.nfc.samsung.rc \
     vendor/samsung/universal9611-common/proprietary/vendor/etc/init/init.vendor.rilcommon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.vendor.rilcommon.rc \
     vendor/samsung/universal9611-common/proprietary/vendor/etc/init/teegris.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/teegris.rc \
     vendor/samsung/universal9611-common/proprietary/vendor/etc/init/vaultkeeper_common.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vaultkeeper_common.rc \
@@ -20,6 +21,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/universal9611-common/proprietary/vendor/etc/init/wifi.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/wifi.rc \
     vendor/samsung/universal9611-common/proprietary/vendor/etc/mixer_usb_gray.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_usb_gray.xml \
     vendor/samsung/universal9611-common/proprietary/vendor/etc/mixer_usb_white.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_usb_white.xml \
+    vendor/samsung/universal9611-common/proprietary/vendor/etc/nfc/sec_s3nrn82_rfreg.bin:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/sec_s3nrn82_rfreg.bin \
     vendor/samsung/universal9611-common/proprietary/vendor/etc/plmn_delta.bin:$(TARGET_COPY_OUT_VENDOR)/etc/plmn_delta.bin \
     vendor/samsung/universal9611-common/proprietary/vendor/etc/plmn_delta_attaio.bin:$(TARGET_COPY_OUT_VENDOR)/etc/plmn_delta_attaio.bin \
     vendor/samsung/universal9611-common/proprietary/vendor/etc/plmn_delta_hktw.bin:$(TARGET_COPY_OUT_VENDOR)/etc/plmn_delta_hktw.bin \
@@ -54,6 +56,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/universal9611-common/proprietary/vendor/firmware/kernel_bin_mfb.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/kernel_bin_mfb.bin \
     vendor/samsung/universal9611-common/proprietary/vendor/firmware/kernel_bin_mobile_vgg.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/kernel_bin_mobile_vgg.bin \
     vendor/samsung/universal9611-common/proprietary/vendor/firmware/kernel_bin_nfd.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/kernel_bin_nfd.bin \
+    vendor/samsung/universal9611-common/proprietary/vendor/firmware/nfc/sec_s3nrn82_firmware.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/nfc/sec_s3nrn82_firmware.bin \
     vendor/samsung/universal9611-common/proprietary/vendor/firmware/rtdsp.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/rtdsp.bin \
     vendor/samsung/universal9611-common/proprietary/vendor/firmware/spkamp.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/spkamp.bin \
     vendor/samsung/universal9611-common/proprietary/vendor/tee/00000000-0000-0000-0000-564c544b5052:$(TARGET_COPY_OUT_VENDOR)/tee/00000000-0000-0000-0000-564c544b5052
