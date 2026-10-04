@@ -18,6 +18,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/universal9611-common/proprietary/vendor/etc/init/teegris.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/teegris.rc \
     vendor/samsung/universal9611-common/proprietary/vendor/etc/init/vaultkeeper_common.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vaultkeeper_common.rc \
     vendor/samsung/universal9611-common/proprietary/vendor/etc/init/vendor.samsung.rilchip.slsi.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.rilchip.slsi.rc \
+    vendor/samsung/universal9611-common/proprietary/vendor/etc/init/vendor.samsung.rild.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.rild.rc \
     vendor/samsung/universal9611-common/proprietary/vendor/etc/init/wifi.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/wifi.rc \
     vendor/samsung/universal9611-common/proprietary/vendor/etc/mixer_usb_gray.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_usb_gray.xml \
     vendor/samsung/universal9611-common/proprietary/vendor/etc/mixer_usb_white.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_usb_white.xml \
@@ -69,6 +70,7 @@ PRODUCT_PACKAGES += \
     libsecaudiocoreutils \
     libsecnativefeature \
     libsecril-client \
+    libsemnativecarrierfeature \
     libspatializerparamstorage \
     libswspatializer \
     audio.primary.exynos9611 \
@@ -86,8 +88,8 @@ PRODUCT_PACKAGES += \
     libsecaudioinfo \
     libaudioeffectoffload \
     android.hardware.gnss@2.1-impl \
-    libSemDataProps \
-    libSemTelephonyProps \
+    libVendorSemDataProps \
+    libVendorSemTelephonyProps \
     libcrypto-tm \
     libengmode_client \
     libiwt \
@@ -95,7 +97,6 @@ PRODUCT_PACKAGES += \
     liboemcrypto \
     libril_sem \
     libsec-ril \
-    libsemnativecarrierfeature \
     libskeymaster4device \
     libssl-tm \
     libstork_shared \
@@ -113,8 +114,8 @@ PRODUCT_PACKAGES += \
     vendor.samsung.hardware.radio.sim-V1-ndk \
     manifest_android.hardware.drm-service.widevine.xml \
     vendor.samsung.hardware.radio.exclude.slsi.xml \
-    vendor.samsung.hardware.radio_manifest_2_33.xml \
-    vendor.samsung.hardware.sehradio_manifest_2_33.xml \
+    vendor.samsung.hardware.radio_manifest_2_202404.xml \
+    vendor.samsung.hardware.sehradio_manifest_2_202404.xml \
     cass \
     android.hardware.drm-service.widevine \
     gpsd \

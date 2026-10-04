@@ -296,6 +296,49 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libsemnativecarrierfeature",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libsemnativecarrierfeature.so",
+            ],
+            shared_libs: [
+                "libexpat",
+                "libcutils",
+                "libz",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libsemnativecarrierfeature.so",
+            ],
+            shared_libs: [
+                "libexpat",
+                "libcutils",
+                "libz",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libspatializerparamstorage",
     owner: "samsung",
     strip: {
@@ -839,7 +882,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libSemDataProps",
+    name: "libVendorSemDataProps",
     owner: "samsung",
     strip: {
         none: true,
@@ -847,7 +890,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/libSemDataProps.so",
+                "proprietary/vendor/lib64/libVendorSemDataProps.so",
             ],
             shared_libs: [
                 "liblog",
@@ -864,7 +907,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libSemTelephonyProps",
+    name: "libVendorSemTelephonyProps",
     owner: "samsung",
     strip: {
         none: true,
@@ -872,7 +915,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/libSemTelephonyProps.so",
+                "proprietary/vendor/lib64/libVendorSemTelephonyProps.so",
             ],
             shared_libs: [
                 "liblog",
@@ -1034,19 +1077,16 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libril_sem.so",
             ],
             shared_libs: [
-                "libhidlbase",
-                "android.hardware.radio@1.0",
-                "android.hardware.radio@1.1",
-                "android.hardware.radio@1.2",
                 "libbase",
                 "libbinder_ndk",
-                "android.hardware.radio.config-V1-ndk",
-                "android.hardware.radio.data-V1-ndk",
-                "android.hardware.radio.messaging-V1-ndk",
-                "android.hardware.radio.modem-V1-ndk",
-                "android.hardware.radio.network-V1-ndk",
-                "android.hardware.radio.sim-V1-ndk",
-                "android.hardware.radio.voice-V1-ndk",
+                "android.hardware.radio.config-V3-ndk",
+                "android.hardware.radio.data-V3-ndk",
+                "android.hardware.radio.messaging-V3-ndk",
+                "android.hardware.radio.modem-V3-ndk",
+                "android.hardware.radio.network-V3-ndk",
+                "android.hardware.radio.sap-V1-ndk",
+                "android.hardware.radio.sim-V3-ndk",
+                "android.hardware.radio.voice-V3-ndk",
                 "vendor.samsung.hardware.radio.bridge-V1-ndk",
                 "vendor.samsung.hardware.radio.data-V1-ndk",
                 "vendor.samsung.hardware.radio.messaging-V1-ndk",
@@ -1057,6 +1097,7 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "librilutils",
                 "libutils",
+                "libfloatingfeature",
                 "libc++",
                 "libc",
                 "libm",
@@ -1093,8 +1134,9 @@ cc_prebuilt_library_shared {
                 "libz",
                 "libutils",
                 "libjsoncpp",
-                "libSemTelephonyProps",
-                "libSemDataProps",
+                "libVendorSemTelephonyProps",
+                "libVendorSemDataProps",
+                "libprotobuf-cpp-full-21.7",
                 "libvkmanager_vendor",
                 "libengmode_client",
                 "libbase",
@@ -1103,35 +1145,6 @@ cc_prebuilt_library_shared {
                 "libsecnativefeature",
                 "libfloatingfeature",
                 "libsemnativecarrierfeature",
-                "libc++",
-                "libprotobuf-cpp-full-21.7",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libsemnativecarrierfeature",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libsemnativecarrierfeature.so",
-            ],
-            shared_libs: [
-                "libexpat",
-                "libcutils",
-                "libz",
-                "liblog",
                 "libc++",
                 "libc",
                 "libm",
@@ -1567,18 +1580,18 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-    name: "vendor.samsung.hardware.radio_manifest_2_33.xml",
+    name: "vendor.samsung.hardware.radio_manifest_2_202404.xml",
     owner: "samsung",
-    src: "proprietary/vendor/etc/vintf/manifest/vendor.samsung.hardware.radio_manifest_2_33.xml",
+    src: "proprietary/vendor/etc/vintf/manifest/vendor.samsung.hardware.radio_manifest_2_202404.xml",
     filename_from_src: true,
     sub_dir: "vintf/manifest",
     soc_specific: true,
 }
 
 prebuilt_etc_xml {
-    name: "vendor.samsung.hardware.sehradio_manifest_2_33.xml",
+    name: "vendor.samsung.hardware.sehradio_manifest_2_202404.xml",
     owner: "samsung",
-    src: "proprietary/vendor/etc/vintf/manifest/vendor.samsung.hardware.sehradio_manifest_2_33.xml",
+    src: "proprietary/vendor/etc/vintf/manifest/vendor.samsung.hardware.sehradio_manifest_2_202404.xml",
     filename_from_src: true,
     sub_dir: "vintf/manifest",
     soc_specific: true,
