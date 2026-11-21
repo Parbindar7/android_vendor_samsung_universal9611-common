@@ -65,38 +65,24 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libGLES_mali \
     lib_SoundBooster_ver1000 \
-    libfloatingfeature \
     libprofileparamstorage \
     libsecaudiocoreutils \
-    libsecnativefeature \
     libsecril-client \
     libsemnativecarrierfeature \
     libspatializerparamstorage \
     libswspatializer \
-    audio.primary.exynos9611 \
-    libSamsungPostProcessConvertor \
-    lib_SamsungRec_07010 \
-    lib_SoundAlive_SRC384_ver320 \
-    lib_soundaliveresampler \
-    libalsautils_sec \
-    libaudio-ril \
-    libaudio_soundtrigger \
-    libaudioproxy \
-    libaudioroute_vendor \
-    librecordalive \
-    libsamsungDiamondVoice \
-    libsecaudioinfo \
-    libaudioeffectoffload \
     android.hardware.gnss@2.1-impl \
     libVendorSemDataProps \
     libVendorSemTelephonyProps \
     libcrypto-tm \
     libengmode_client \
+    libfloatingfeature \
     libiwt \
     libkeymaster_helper \
     liboemcrypto \
     libril_sem \
     libsec-ril \
+    libsecnativefeature \
     libskeymaster4device \
     libssl-tm \
     libstork_shared \
