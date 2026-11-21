@@ -64,26 +64,25 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     libGLES_mali \
-    lib_SoundBooster_ver1000 \
-    libprofileparamstorage \
-    libsecaudiocoreutils \
-    libsecril-client \
-    libsemnativecarrierfeature \
-    libspatializerparamstorage \
-    libswspatializer \
     android.hardware.gnss@2.1-impl \
     libVendorSemDataProps \
     libVendorSemTelephonyProps \
+    lib_SoundBooster_ver1000 \
     libcrypto-tm \
     libengmode_client \
     libfloatingfeature \
     libiwt \
     libkeymaster_helper \
     liboemcrypto \
+    libprofileparamstorage \
     libril_sem \
     libsec-ril \
+    libsecaudiocoreutils \
     libsecnativefeature \
+    libsecril-client \
+    libsemnativecarrierfeature \
     libskeymaster4device \
+    libspatializerparamstorage \
     libssl-tm \
     libstork_shared \
     libteecl \
@@ -92,6 +91,7 @@ PRODUCT_PACKAGES += \
     libvkservice \
     libwrappergps \
     libwvaidl \
+    libswspatializer \
     vendor.samsung.hardware.radio-V1-ndk \
     vendor.samsung.hardware.radio.bridge-V1-ndk \
     vendor.samsung.hardware.radio.channel-V1-ndk \
@@ -111,10 +111,6 @@ PRODUCT_PACKAGES += \
     vaultkeeperd
 
 PRODUCT_PACKAGES += \
-    vendor_lib_libOpenCL_so \
-    vendor_lib_libOpenCL_so_1 \
-    vendor_lib_libOpenCL_so_1_1 \
-    vendor_lib_hw_vulkan_universal9611_so \
     vendor_lib64_libOpenCL_so \
     vendor_lib64_libOpenCL_so_1 \
     vendor_lib64_libOpenCL_so_1_1 \
